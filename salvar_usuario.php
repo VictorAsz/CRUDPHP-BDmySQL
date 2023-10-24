@@ -45,7 +45,7 @@
             
             case 'excluir':
 
-            $sql = "DELETE FROM usuarios WHERE id=" .$_RQUEST["id"];
+            $sql = "DELETE FROM usuarios WHERE id=".$_REQUEST["id"];
             
             $res = $conn->query($sql);
 
@@ -55,7 +55,7 @@
             }else {
                 print "<script>alert('Não foi possível Excluir');</script>";
                 print"<script> location.href='?page=listar';</script>";
-            },
+            };
 
             break; 
     }
